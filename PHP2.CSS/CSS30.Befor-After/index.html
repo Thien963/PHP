@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="normalize.css" />
+
+    <style type="text/css">
+        .container{
+            background: #FF6347;
+            margin: 30px auto;
+            width: 1000px
+        }
+        .row{
+            background: #FF0000;
+            overflow: auto;
+            padding: 20px 0;
+        }
+        .row::before {
+            content: "Thêm vào phía đầu bên trong thẻ";
+            color: white;
+            clear: both;
+            display: block;
+        }
+        .row::after {
+            content: "Thêm vào phía sau bên trong thẻ";
+            color: white;
+            clear: both;
+            display: block;
+        }
+        .row .col1{
+            float: left;
+            min-height: 350px;
+            background: blueviolet;
+            color: white;
+            width: 30%;
+        }
+
+        .col2{
+            float: right;
+            min-height: 350px;
+            background: #FFC0CB;
+            color: #FFFF00;
+            width: 67%;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <h1>::befor  ::after</h1>
+    <h2>::befor được sử dụng để thêm 1 phần nội dung/css (có thể rỗng) vào phần đầu trong Selector </h2>
+
+    <h2>::after được sử dụng để thêm 1 phần nội dung hoặc css  vào  trong Selector ở phía cuối</h2>
+
+    <div class="container">
+        <div class="row">
+            <div class="col1">Column 1</div>
+            <div class="col2">Colum 2</div>
+        </div>
+
+    </div>
+</body>
+</html>
