@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table, td, th {
+            border: 0px solid black;
+            text-align: center;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<h2>Danh sách sinh viên</h2>
+<div>
+    <table id="demo" style="display: block" border="0">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Thiên</td>
+            <td>Nam Định</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>Thưởng</td>
+            <td>Quảng Ninh</td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>Nhung</td>
+            <td>Nghệ An</td>
+        </tr>
+    </table>
+</div>
+
+<div>
+    <button type="button" onclick="document.getElementById('demo').style.display = 'block';">Hiện</button>
+    <button type="button" onclick="document.getElementById('demo').style.display = 'none';">Ẩn</button>
+</div>
+
+<!--<script>
+    document.getElementById("demo").style.display = 'block';
+    document.getElementById("demo").style.display = 'none';
+</script>-->
+</body>
+</html>
